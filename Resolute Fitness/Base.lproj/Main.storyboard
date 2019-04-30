@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainLogo" translatesAutoresizingMaskIntoConstraints="NO" id="P3x-Z1-sOQ">
-                                <rect key="frame" x="50" y="64" width="314" height="768"/>
+                                <rect key="frame" x="100" y="64" width="214" height="768"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="P3x-Z1-sOQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oky-eR-s3Z"/>
-                            <constraint firstAttribute="trailing" secondItem="P3x-Z1-sOQ" secondAttribute="trailing" constant="50" id="pZ8-dM-Kb4"/>
+                            <constraint firstAttribute="trailing" secondItem="P3x-Z1-sOQ" secondAttribute="trailing" constant="100" id="pZ8-dM-Kb4"/>
                             <constraint firstItem="P3x-Z1-sOQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="v8w-k8-N6q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
