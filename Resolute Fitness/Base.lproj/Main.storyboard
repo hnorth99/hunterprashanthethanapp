@@ -18,37 +18,67 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainLogo" translatesAutoresizingMaskIntoConstraints="NO" id="P3x-Z1-sOQ">
-                                <rect key="frame" x="65" y="-36" width="284" height="768"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resolute" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QiD-5b-hp7">
-                                <rect key="frame" x="102" y="64" width="210.5" height="62.5"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="52"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fitness" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ezo-3w-qII">
-                                <rect key="frame" x="120" y="128.5" width="174" height="62.5"/>
+                                <rect key="frame" x="120" y="54" width="174" height="76"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="52"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GMm-U1-yPB" userLabel="suggestedWorkout">
-                                <rect key="frame" x="82" y="569" width="269" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
-                                <state key="normal" title="Suggested Workout"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resolute" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QiD-5b-hp7">
+                                <rect key="frame" x="101.5" y="130" width="211" height="76"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="52"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainLogo" translatesAutoresizingMaskIntoConstraints="NO" id="P3x-Z1-sOQ">
+                                <rect key="frame" x="50" y="231" width="314" height="342.5"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uWE-EM-t5V" userLabel="suggestedWorkout">
+                                <rect key="frame" x="50" y="598.5" width="314" height="76.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                <state key="normal" title="Suggested Workout" backgroundImage="buttonPanelBackground">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afx-Eu-ubp" userLabel="createWorkout">
+                                <rect key="frame" x="50" y="685" width="314" height="76"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                <state key="normal" title="Create Workout" backgroundImage="buttonPanelBackground">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ljx-g3-euP" userLabel="savedWorkouts">
+                                <rect key="frame" x="50" y="771" width="314" height="76"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="23"/>
+                                <state key="normal" title="Saved Workouts" backgroundImage="buttonPanelBackground">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="P3x-Z1-sOQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Oky-eR-s3Z"/>
-                            <constraint firstItem="QiD-5b-hp7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V0D-Xj-FE3"/>
-                            <constraint firstItem="Ezo-3w-qII" firstAttribute="top" secondItem="QiD-5b-hp7" secondAttribute="bottom" constant="2" id="WYX-Ry-yDJ"/>
-                            <constraint firstItem="QiD-5b-hp7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="gXZ-Gw-H7z"/>
-                            <constraint firstAttribute="trailing" secondItem="P3x-Z1-sOQ" secondAttribute="trailing" constant="65" id="pZ8-dM-Kb4"/>
-                            <constraint firstItem="P3x-Z1-sOQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="v8w-k8-N6q"/>
-                            <constraint firstItem="Ezo-3w-qII" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zGw-eD-hMz"/>
+                            <constraint firstItem="P3x-Z1-sOQ" firstAttribute="height" secondItem="Ljx-g3-euP" secondAttribute="height" multiplier="4.5" id="0ZN-oC-c9b"/>
+                            <constraint firstItem="afx-Eu-ubp" firstAttribute="top" secondItem="uWE-EM-t5V" secondAttribute="bottom" constant="10" id="1VV-H6-WRa"/>
+                            <constraint firstItem="Ljx-g3-euP" firstAttribute="top" secondItem="afx-Eu-ubp" secondAttribute="bottom" constant="10" id="1s0-ug-97Q"/>
+                            <constraint firstItem="Ezo-3w-qII" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7bH-EZ-GqG"/>
+                            <constraint firstAttribute="trailing" secondItem="uWE-EM-t5V" secondAttribute="trailing" constant="50" id="Gd2-tu-Vab"/>
+                            <constraint firstAttribute="trailing" secondItem="P3x-Z1-sOQ" secondAttribute="trailing" constant="50" id="NiH-ZK-syk"/>
+                            <constraint firstItem="P3x-Z1-sOQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nk4-Yy-kzc"/>
+                            <constraint firstItem="Ezo-3w-qII" firstAttribute="height" secondItem="QiD-5b-hp7" secondAttribute="height" id="PmR-Ls-gfh"/>
+                            <constraint firstAttribute="trailing" secondItem="Ljx-g3-euP" secondAttribute="trailing" constant="50" id="Ujd-zf-KoT"/>
+                            <constraint firstItem="QiD-5b-hp7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YR9-UZ-yyb"/>
+                            <constraint firstItem="uWE-EM-t5V" firstAttribute="top" secondItem="P3x-Z1-sOQ" secondAttribute="bottom" constant="25" id="crD-Sk-nJW"/>
+                            <constraint firstItem="afx-Eu-ubp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dEY-bd-XuV"/>
+                            <constraint firstAttribute="trailing" secondItem="afx-Eu-ubp" secondAttribute="trailing" constant="50" id="igZ-iC-KdQ"/>
+                            <constraint firstItem="Ezo-3w-qII" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="ilW-wL-fWE"/>
+                            <constraint firstItem="Ljx-g3-euP" firstAttribute="height" secondItem="afx-Eu-ubp" secondAttribute="height" id="ldR-K0-Aig"/>
+                            <constraint firstItem="P3x-Z1-sOQ" firstAttribute="top" secondItem="QiD-5b-hp7" secondAttribute="bottom" constant="25" id="m2g-ZP-Jzt"/>
+                            <constraint firstItem="Ljx-g3-euP" firstAttribute="height" secondItem="uWE-EM-t5V" secondAttribute="height" id="rwG-vN-1zD"/>
+                            <constraint firstItem="QiD-5b-hp7" firstAttribute="top" secondItem="Ezo-3w-qII" secondAttribute="bottom" id="tq6-x3-74c"/>
+                            <constraint firstItem="Ljx-g3-euP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wnV-vs-6sp"/>
+                            <constraint firstItem="Ljx-g3-euP" firstAttribute="height" secondItem="Ezo-3w-qII" secondAttribute="height" id="zRl-Xf-9W4"/>
+                            <constraint firstItem="uWE-EM-t5V" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zWK-Bk-XwJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ljx-g3-euP" secondAttribute="bottom" constant="15" id="zqP-Qp-aSu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -59,6 +89,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="buttonPanelBackground" width="448" height="157.5"/>
         <image name="mainLogo" width="768" height="768"/>
     </resources>
 </document>
