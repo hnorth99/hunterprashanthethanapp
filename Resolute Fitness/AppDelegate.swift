@@ -10,8 +10,7 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    //Here is a new change
-    //aofdgspoidnfgopaidfn
+    // comment
     var window: UIWindow?
 
     //changee prash edit
