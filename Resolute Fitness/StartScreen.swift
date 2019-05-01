@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class StartScreen: UIViewController {
     @IBOutlet weak var resoluteLabel: UILabel!
     @IBOutlet weak var fitnessLabel: UILabel!
     @IBOutlet weak var mainLogoImage: UIImageView!

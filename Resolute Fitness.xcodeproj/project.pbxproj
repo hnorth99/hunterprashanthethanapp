@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		06508199226A958B007F6912 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06508198226A958B007F6912 /* AppDelegate.swift */; };
-		0650819B226A958B007F6912 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0650819A226A958B007F6912 /* ViewController.swift */; };
+		0650819B226A958B007F6912 /* StartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0650819A226A958B007F6912 /* StartScreen.swift */; };
 		0650819E226A958B007F6912 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0650819C226A958B007F6912 /* Main.storyboard */; };
 		065081A0226A958C007F6912 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0650819F226A958C007F6912 /* Assets.xcassets */; };
 		065081A3226A958C007F6912 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 065081A1226A958C007F6912 /* LaunchScreen.storyboard */; };
 		065081AE226A958C007F6912 /* Resolute_FitnessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065081AD226A958C007F6912 /* Resolute_FitnessTests.swift */; };
 		065081B9226A958C007F6912 /* Resolute_FitnessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065081B8226A958C007F6912 /* Resolute_FitnessUITests.swift */; };
+		06AEFFDF22792360006E6954 /* CreateWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AEFFDE22792360006E6954 /* CreateWorkout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		06508195226A958B007F6912 /* Resolute Fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Resolute Fitness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		06508198226A958B007F6912 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0650819A226A958B007F6912 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0650819A226A958B007F6912 /* StartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreen.swift; sourceTree = "<group>"; };
 		0650819D226A958B007F6912 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0650819F226A958C007F6912 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		065081A2226A958C007F6912 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		065081B4226A958C007F6912 /* Resolute FitnessUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Resolute FitnessUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		065081B8226A958C007F6912 /* Resolute_FitnessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolute_FitnessUITests.swift; sourceTree = "<group>"; };
 		065081BA226A958C007F6912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06AEFFDE22792360006E6954 /* CreateWorkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWorkout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				06508198226A958B007F6912 /* AppDelegate.swift */,
-				0650819A226A958B007F6912 /* ViewController.swift */,
+				0650819A226A958B007F6912 /* StartScreen.swift */,
+				06AEFFDE22792360006E6954 /* CreateWorkout.swift */,
 				0650819C226A958B007F6912 /* Main.storyboard */,
 				0650819F226A958C007F6912 /* Assets.xcassets */,
 				065081A1226A958C007F6912 /* LaunchScreen.storyboard */,
@@ -256,8 +259,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0650819B226A958B007F6912 /* ViewController.swift in Sources */,
+				0650819B226A958B007F6912 /* StartScreen.swift in Sources */,
 				06508199226A958B007F6912 /* AppDelegate.swift in Sources */,
+				06AEFFDF22792360006E6954 /* CreateWorkout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
