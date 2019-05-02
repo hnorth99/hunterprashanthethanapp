@@ -138,17 +138,17 @@
                                 <rect key="frame" x="0.0" y="147" width="413" height="705"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jKO-OS-gxJ" userLabel="RowOneView">
-                                        <rect key="frame" x="0.0" y="15" width="413" height="165"/>
+                                        <rect key="frame" x="0.0" y="15" width="413" height="174"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Vb-wI-BQ5" userLabel="ChestButton">
-                                                <rect key="frame" x="15" y="10" width="181.5" height="145"/>
+                                                <rect key="frame" x="15" y="10" width="181.5" height="154"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                                 <state key="normal" title="Chest" backgroundImage="buttonPanelBackground">
                                                     <color key="titleColor" red="0.19264850019999999" green="0.37350219489999997" blue="0.51374334099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fB-ET-wMD" userLabel="BackButton">
-                                                <rect key="frame" x="216.5" y="10" width="181.5" height="145"/>
+                                                <rect key="frame" x="216.5" y="10" width="181.5" height="154"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                                 <state key="normal" title="Back" backgroundImage="buttonPanelBackground">
                                                     <color key="titleColor" red="0.19264850019999999" green="0.37350219489999997" blue="0.51374334099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -168,17 +168,17 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wNq-sK-vhX" userLabel="RowTwoView">
-                                        <rect key="frame" x="0.0" y="190" width="413" height="165"/>
+                                        <rect key="frame" x="0.0" y="199" width="413" height="173.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6f-cU-uoh" userLabel="LegsButton">
-                                                <rect key="frame" x="15" y="10" width="181.5" height="145"/>
+                                                <rect key="frame" x="15" y="10" width="181.5" height="153.5"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                                 <state key="normal" title="Legs" backgroundImage="buttonPanelBackground">
                                                     <color key="titleColor" red="0.19264850019999999" green="0.37350219489999997" blue="0.51374334099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rq7-AD-VMd" userLabel="ShouldersButton">
-                                                <rect key="frame" x="216.5" y="10" width="181.5" height="145"/>
+                                                <rect key="frame" x="216.5" y="10" width="181.5" height="153.5"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                                 <state key="normal" title="Shoulders" backgroundImage="buttonPanelBackground">
                                                     <color key="titleColor" red="0.19264850019999999" green="0.37350219489999997" blue="0.51374334099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -198,17 +198,17 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XSU-WY-cVL" userLabel="RowThreeView">
-                                        <rect key="frame" x="0.0" y="365" width="413" height="165"/>
+                                        <rect key="frame" x="0.0" y="382.5" width="413" height="173.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xL-jz-hJX" userLabel="LegsButton">
-                                                <rect key="frame" x="15" y="10" width="181.5" height="145"/>
+                                                <rect key="frame" x="15" y="10" width="181.5" height="153.5"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                                 <state key="normal" title="Legs" backgroundImage="buttonPanelBackground">
                                                     <color key="titleColor" red="0.19264850019999999" green="0.37350219489999997" blue="0.51374334099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9b-ev-3En" userLabel="ShouldersButton">
-                                                <rect key="frame" x="216.5" y="10" width="181.5" height="145"/>
+                                                <rect key="frame" x="216.5" y="10" width="181.5" height="153.5"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                                 <state key="normal" title="Shoulders" backgroundImage="buttonPanelBackground">
                                                     <color key="titleColor" red="0.19264850019999999" green="0.37350219489999997" blue="0.51374334099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -228,10 +228,10 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cPe-Q9-cP1" userLabel="RowFourView">
-                                        <rect key="frame" x="0.0" y="540" width="413" height="165"/>
+                                        <rect key="frame" x="0.0" y="566" width="413" height="139"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTv-wv-SsS" userLabel="WorkoutSoFarButton">
-                                                <rect key="frame" x="15" y="10" width="383" height="145"/>
+                                                <rect key="frame" x="15" y="10" width="383" height="119"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                                 <state key="normal" title="Workout So Far" backgroundImage="buttonPanelBackground">
                                                     <color key="titleColor" red="0.19264850019999999" green="0.37350219489999997" blue="0.51374334099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -249,7 +249,6 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="wNq-sK-vhX" secondAttribute="trailing" id="2hN-SX-CRF"/>
                                     <constraint firstAttribute="trailing" secondItem="XSU-WY-cVL" secondAttribute="trailing" id="GAN-nI-KHu"/>
-                                    <constraint firstItem="cPe-Q9-cP1" firstAttribute="height" secondItem="jKO-OS-gxJ" secondAttribute="height" id="IeI-Lc-WB1"/>
                                     <constraint firstItem="XSU-WY-cVL" firstAttribute="top" secondItem="wNq-sK-vhX" secondAttribute="bottom" constant="10" id="NJu-Wp-MEP"/>
                                     <constraint firstItem="jKO-OS-gxJ" firstAttribute="leading" secondItem="jbW-7l-mYM" secondAttribute="leading" id="Rmh-ke-ADT"/>
                                     <constraint firstItem="wNq-sK-vhX" firstAttribute="top" secondItem="jKO-OS-gxJ" secondAttribute="bottom" constant="10" id="ZIF-1Q-5Rq"/>
@@ -259,6 +258,7 @@
                                     <constraint firstItem="XSU-WY-cVL" firstAttribute="leading" secondItem="jbW-7l-mYM" secondAttribute="leading" id="iQI-K1-tpQ"/>
                                     <constraint firstItem="cPe-Q9-cP1" firstAttribute="leading" secondItem="jbW-7l-mYM" secondAttribute="leading" id="kGc-6Z-LU5"/>
                                     <constraint firstItem="jKO-OS-gxJ" firstAttribute="top" secondItem="jbW-7l-mYM" secondAttribute="top" constant="15" id="lsI-1Z-axG"/>
+                                    <constraint firstItem="jKO-OS-gxJ" firstAttribute="height" secondItem="cPe-Q9-cP1" secondAttribute="height" multiplier="1.25" id="oKq-bI-ryb"/>
                                     <constraint firstItem="wNq-sK-vhX" firstAttribute="height" secondItem="jKO-OS-gxJ" secondAttribute="height" id="p8F-BQ-ZZg"/>
                                     <constraint firstAttribute="trailing" secondItem="jKO-OS-gxJ" secondAttribute="trailing" id="s7N-Ds-Z9Q"/>
                                     <constraint firstItem="XSU-WY-cVL" firstAttribute="height" secondItem="wNq-sK-vhX" secondAttribute="height" id="sCh-oP-GbH"/>
