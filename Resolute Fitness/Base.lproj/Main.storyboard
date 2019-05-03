@@ -108,12 +108,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C5u-AI-THg" userLabel="TopPartView">
                                 <rect key="frame" x="0.0" y="59" width="414" height="88"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Workout" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="by5-Bd-Mc5" userLabel="createWorkoutLabel">
-                                        <rect key="frame" x="46" y="0.0" width="322" height="88"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="44"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rh0-ep-k8S" userLabel="backButton">
                                         <rect key="frame" x="0.0" y="0.0" width="46" height="88"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="37"/>
@@ -122,6 +116,12 @@
                                             <segue destination="BYZ-38-t0r" kind="show" id="Meh-4y-Ogz"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Workout" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="by5-Bd-Mc5" userLabel="createWorkoutLabel">
+                                        <rect key="frame" x="46" y="0.0" width="322" height="88"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="44"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="by5-Bd-Mc5" firstAttribute="top" secondItem="C5u-AI-THg" secondAttribute="top" id="6vY-0C-l5Y"/>
@@ -146,6 +146,9 @@
                                                 <state key="normal" title="Chest" backgroundImage="buttonPanelBackground">
                                                     <color key="titleColor" red="0.19264850019999999" green="0.37350219489999997" blue="0.51374334099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="7st-BJ-B1Z" kind="show" id="YVa-JJ-TOf"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fB-ET-wMD" userLabel="BackButton">
                                                 <rect key="frame" x="216.5" y="10" width="181.5" height="154"/>
@@ -282,11 +285,74 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5zA-5H-GIa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="453.62318840579712" y="-374.33035714285711"/>
+            <point key="canvasLocation" x="459" y="-421"/>
+        </scene>
+        <!--Muscle Group Exercises-->
+        <scene sceneID="Ais-Pk-3Ei">
+            <objects>
+                <viewController id="7st-BJ-B1Z" customClass="MuscleGroupExercises" customModule="Resolute_Fitness" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lja-HR-MSG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Tg-1N-jeu" userLabel="TopPartView">
+                                <rect key="frame" x="0.0" y="59" width="414" height="92"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="km9-Xq-IgY" userLabel="backButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="92"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                        <state key="normal" title="&lt;"/>
+                                        <connections>
+                                            <segue destination="2xt-Pc-O21" kind="show" id="A3S-2g-9nR"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Muscle Group" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nCZ-gA-R1H" userLabel="muscleGroupLabel">
+                                        <rect key="frame" x="46" y="0.0" width="322" height="92"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="44"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="nCZ-gA-R1H" firstAttribute="centerX" secondItem="5Tg-1N-jeu" secondAttribute="centerX" id="5Ly-V5-GE6"/>
+                                    <constraint firstItem="nCZ-gA-R1H" firstAttribute="centerY" secondItem="5Tg-1N-jeu" secondAttribute="centerY" id="5qJ-Wa-tCi"/>
+                                    <constraint firstItem="nCZ-gA-R1H" firstAttribute="top" secondItem="5Tg-1N-jeu" secondAttribute="top" id="Nr7-Ma-OAU"/>
+                                    <constraint firstItem="km9-Xq-IgY" firstAttribute="centerY" secondItem="5Tg-1N-jeu" secondAttribute="centerY" id="T8N-08-E08"/>
+                                    <constraint firstItem="nCZ-gA-R1H" firstAttribute="width" secondItem="km9-Xq-IgY" secondAttribute="width" multiplier="7" id="gaf-Ag-Hcu"/>
+                                    <constraint firstItem="km9-Xq-IgY" firstAttribute="leading" secondItem="5Tg-1N-jeu" secondAttribute="leading" id="hWV-GT-gD0"/>
+                                    <constraint firstItem="km9-Xq-IgY" firstAttribute="top" secondItem="5Tg-1N-jeu" secondAttribute="top" id="kVX-56-sF6"/>
+                                    <constraint firstItem="nCZ-gA-R1H" firstAttribute="leading" secondItem="km9-Xq-IgY" secondAttribute="trailing" id="x6R-dK-Vd2"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h1N-8u-lQF" userLabel="ExerciseView">
+                                <rect key="frame" x="0.0" y="151" width="413" height="735"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5Tg-1N-jeu" firstAttribute="top" secondItem="vTQ-ng-pAk" secondAttribute="top" constant="15" id="0sa-8v-xAm"/>
+                            <constraint firstItem="5Tg-1N-jeu" firstAttribute="leading" secondItem="vTQ-ng-pAk" secondAttribute="leading" id="AJN-0y-na4"/>
+                            <constraint firstAttribute="bottom" secondItem="h1N-8u-lQF" secondAttribute="bottom" constant="10" id="DdP-FW-hQl"/>
+                            <constraint firstItem="vTQ-ng-pAk" firstAttribute="trailing" secondItem="h1N-8u-lQF" secondAttribute="trailing" constant="1" id="LYY-60-dhg"/>
+                            <constraint firstItem="h1N-8u-lQF" firstAttribute="top" secondItem="5Tg-1N-jeu" secondAttribute="bottom" id="RFc-dA-cHL"/>
+                            <constraint firstItem="h1N-8u-lQF" firstAttribute="leading" secondItem="vTQ-ng-pAk" secondAttribute="leading" id="RuF-Mo-xfD"/>
+                            <constraint firstItem="5Tg-1N-jeu" firstAttribute="trailing" secondItem="vTQ-ng-pAk" secondAttribute="trailing" id="hbB-7h-rjd"/>
+                            <constraint firstItem="h1N-8u-lQF" firstAttribute="height" secondItem="5Tg-1N-jeu" secondAttribute="height" multiplier="8" id="yba-uZ-7cY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vTQ-ng-pAk"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gae-RH-963" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1297" y="-386"/>
         </scene>
     </scenes>
     <resources>
         <image name="buttonPanelBackground" width="448" height="157.5"/>
         <image name="mainLogo" width="768" height="768"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="YVa-JJ-TOf"/>
+        <segue reference="A3S-2g-9nR"/>
+    </inferredMetricsTieBreakers>
 </document>
