@@ -352,7 +352,6 @@
         <image name="mainLogo" width="768" height="768"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="YVa-JJ-TOf"/>
-        <segue reference="A3S-2g-9nR"/>
+        <segue reference="edM-CS-4FK"/>
     </inferredMetricsTieBreakers>
 </document>
