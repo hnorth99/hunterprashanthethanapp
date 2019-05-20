@@ -133,7 +133,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         //BACK EXERCISES
-        //Create chest exercise objects and store them inside the exercise map
+        //Create back exercise objects and store them inside the exercise map
         //BARBELL EXERCISES
         let deadlift: Exercise = Exercise(name: "Deadlift", information: "Decide later")
         GlobalVariables.exerciseMap["Back"]?.insert(deadlift)
@@ -208,7 +208,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GlobalVariables.exerciseMap["Back"]?.insert(hyperextensions)
         
         //LEG EXERCISES
-        //Create chest exercise objects and store them inside the exercise map
+        //Create leg exercise objects and store them inside the exercise map
         //BARBELL EXERCISES
         let backSquats: Exercise = Exercise(name: "Back Squats", information: "Decide later")
         GlobalVariables.exerciseMap["Legs"]?.insert(backSquats)
@@ -283,6 +283,166 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GlobalVariables.exerciseMap["Legs"]?.insert(snatchGripDeadlift)
         GlobalVariables.exerciseMap["Legs"]?.insert(trapBarDeadlift)
         GlobalVariables.exerciseMap["Legs"]?.insert(goodmornings)
+        
+        
+        //SHOULDER EXERCISES
+        //Create shoulder exercise objects and store them inside the exercise map
+        //BARBELL EXERCISES
+        let barbellMilitaryPress: Exercise = Exercise(name: "Barbell Military Press", information: "Decide later")
+        GlobalVariables.exerciseMap["Shoulders"]?.insert(barbellMilitaryPress)
+        
+        let uprightBarbellRow: Exercise = Exercise(name: "Upright Barbell Row", information: "Decide later")
+        GlobalVariables.exerciseMap["Shoulders"]?.insert(uprightBarbellRow)
+        
+        //DUMBBELL EXERCISES
+        let bentOverRearDeltRaise: Exercise = Exercise(name: "Bent Over Rear Delt Raise", information: "Decide later")
+        GlobalVariables.exerciseMap["Shoulders"]?.insert(bentOverRearDeltRaise)
+        
+        let sideDumbbellLateralRaise: Exercise = Exercise(name: "Side Dumbbell Lateral Raise", information: "Decide later")
+        GlobalVariables.exerciseMap["Shoulders"]?.insert(sideDumbbellLateralRaise)
+        
+        let frontDumbbellRaise: Exercise = Exercise(name: "Front Dumbbell Raise", information: "Decide later")
+        GlobalVariables.exerciseMap["Shoudler"]?.insert(frontDumbbellRaise)
+        
+        //MACHINE EXERCISES
+        let frontCableRaise: Exercise = Exercise(name: "Front Cable Raise", information: "Decide later")
+        GlobalVariables.exerciseMap["Shoulders"]?.insert(frontCableRaise)
+        
+        let sideLateralCableRaise : Exercise = Exercise(name: "SideLateralCableRiase", information: "Decide later")
+        GlobalVariables.exerciseMap["Shoulders"]?.insert(sideLateralCableRaise)
+        
+        let uprightCableRow: Exercise = Exercise(name: "Upright Cable Row", information: "Decide later")
+        GlobalVariables.exerciseMap["Shoulders"]?.insert(uprightCableRow)
+        
+        let rearCableFly: Exercise = Exercise(name: "Rear Cable Fly", information: "Decide later")
+        GlobalVariables.exerciseMap["Shoulders"]?.insert(rearCableFly)
+        
+        let machineMilitaryPress: Exercise = Exercise(name: "Machine Military Press", information: "Decide later")
+        GlobalVariables.exerciseMap["Shoulders"]?.insert(machineMilitaryPress)
+        
+        
+        //ARM EXERCISES
+        //Create arm exercise objects and store them inside the exercise map
+        //BARBELL EXERCISES
+        let standingBarbellCurl: Exercise = Exercise(name: "Standing Barbell Curl", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(standingBarbellCurl)
+        
+        let pauseBarbellCurl: Exercise = Exercise(name: "Pause Barbell Curl", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(pauseBarbellCurl)
+        
+        let preacherCurl: Exercise = Exercise(name: "Preacher Curl", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(preacherCurl)
+        
+        let wideGripBarbellCurl: Exercise = Exercise(name: "Wide Grip Barbell Curl", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(wideGripBarbellCurl)
+        
+        let skullCrushers: Exercise = Exercise(name: "Skull Crushers", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(skullCrushers)
+        
+        let inclineSkullCrushers: Exercise = Exercise(name: "Incline Skull Crushers", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(inclineSkullCrushers)
+        
+        let declineSkullCrushers: Exercise = Exercise(name: "Decline Skull Crushers", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(declineSkullCrushers)
+        
+        
+        
+        //DUMBBELL EXERCISES
+        let concentrationCurl: Exercise = Exercise(name: "Concentration Curl", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(concentrationCurl)
+        
+        let standingDumbbellCurl: Exercise = Exercise(name: "Standing Dumbbell Curl", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(standingDumbbellCurl)
+        
+        let pauseDumbbellCurl: Exercise = Exercise(name: "Pause Dumbbell Curl", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(pauseDumbbellCurl)
+        
+        let hammerCurl: Exercise = Exercise(name: "Hammer Curl", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(hammerCurl)
+        
+        let inclineDumbbellHammerCurl: Exercise = Exercise(name: "Incline Dumbbell Hammer Curl", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(inclineDumbbellHammerCurl)
+        
+        let inclineDumbbellCurl: Exercise = Exercise(name: "Incline Dumbbell Curl", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(inclineDumbbellCurl)
+        
+        let zottmanCurl: Exercise = Exercise(name: "Zottman Curl", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(zottmanCurl)
+        
+        let oneArmPreacherCurl: Exercise = Exercise(name: "One Arm Preacher Curl", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(oneArmPreacherCurl)
+        
+        let standingOverheadDumbbellExtension: Exercise = Exercise(name: "Standing Overhead Dumbbell Extension", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(standingOverheadDumbbellExtension)
+        
+        let tricepDumbbellKickback: Exercise = Exercise(name: "Tricep Dumbbell Kickback", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(tricepDumbbellKickback)
+        
+        //MACHINE EXERCISES
+        let cableRopeHammerCurl: Exercise = Exercise(name: "Cable Rop Hammer Curl", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(cableRopeHammerCurl)
+        
+        let cableBarCurl: Exercise = Exercise(name: "Cable Bar Curl", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(cableBarCurl)
+        
+        let cableFlexCurl: Exercise = Exercise(name: "Cable Flex Curl", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(cableFlexCurl)
+        
+        let machineCurl: Exercise = Exercise(name: "Machine Curl", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(machineCurl)
+        
+        let cableBarTricepExtension: Exercise = Exercise(name: "Cable Bar Tricep Extension", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(cableBarTricepExtension)
+        
+        let cableRopeTricepExtension: Exercise = Exercise(name: "Cable Rope Tricep Extension", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(cableRopeTricepExtension)
+        
+        let kneelingOverheadCableExtension: Exercise = Exercise(name: "Kneeling Overhead Cable Extension", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(kneelingOverheadCableExtension)
+        
+        //BODYWEIGHT
+        let benchDips: Exercise = Exercise(name: "Bench Dips", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(benchDips)
+        
+        //ABDOMINAL EXERCISES
+        //create an exercise object and then store it in the map
+        let medicineBallSlam: Exercise = Exercise(name: "Medicine Ball Slam", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(medicineBallSlam)
+        
+        let plank: Exercise = Exercise(name: "Plank", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(plank)
+        
+        let declineReverseCrunch: Exercise = Exercise(name: "Decline Reverse Crunch", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(declineReverseCrunch)
+        
+        let bicycleCrunch: Exercise = Exercise(name: "Bicycle Crunch", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(bicycleCrunch)
+        
+        let russianTwist: Exercise = Exercise(name: "Russian Twist", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(russianTwist)
+        
+        let declineCrunch: Exercise = Exercise(name: "Decline Crunch", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(declineCrunch)
+        
+        let crunch: Exercise = Exercise(name: "Crunch", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(crunch)
+        
+        let situp: Exercise = Exercise(name: "Situp", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(situp)
+        
+        let obliqueCableCrunch: Exercise = Exercise(name: "Oblique Cable Crunch", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(obliqueCableCrunch)
+        
+        let legRaise: Exercise = Exercise(name: "Leg Raise", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(legRaise)
+        
+        let flutterKick: Exercise = Exercise(name: "Flutter Kick", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(flutterKick)
+        
+        let scissorKick: Exercise = Exercise(name: "Scissor Kick", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(scissorKick)
+        
+        let barbellRoleout: Exercise = Exercise(name: "Barbell Roleout", information: "Decide later")
+        GlobalVariables.exerciseMap["Arms"]?.insert(barbellRoleout)
     }
 }
-
