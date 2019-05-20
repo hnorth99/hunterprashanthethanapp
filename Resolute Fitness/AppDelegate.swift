@@ -25,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             firstRun = false
             buildExerciseDatabase()
         }
+        
         return true
     }
 
@@ -50,6 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    //Create all exercise objects and place them into the exercise map
     func buildExerciseDatabase() {
         //Create the set associated with each muscle group and store it within the exercise map
         GlobalVariables.exerciseMap["Chest"] = Set<Exercise>()
