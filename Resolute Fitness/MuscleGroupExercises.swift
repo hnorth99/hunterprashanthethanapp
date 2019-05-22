@@ -8,14 +8,27 @@
 
 import UIKit
 
-class MuscleGroupExercises: UIViewController {
-
-    var muscleGroupName: String!
+class MuscleGroupExercises: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet weak var muscleGroupLabel: UILabel!
+    @IBOutlet weak var exerciseTable: UITableView!
+    let list = ["first", "second", "third", "fourth"]
+    var pageType: String
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //return list.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //let cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "standardCell")
+        //let cell = tableView.dequeueReusableCell(withIdentifier: "standardCell", for: indexPath)
+        //cell.textLabel?.text = list[indexPath.row]
         
-        // Do any additional setup after loading the view.
+        //return cell
     }
     
 

@@ -147,7 +147,7 @@
                                                     <color key="titleColor" red="0.19264850019999999" green="0.37350219489999997" blue="0.51374334099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="7st-BJ-B1Z" kind="show" id="YVa-JJ-TOf"/>
+                                                    <segue destination="7st-BJ-B1Z" kind="show" identifier="chestSegue" id="YVa-JJ-TOf"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fB-ET-wMD" userLabel="BackButton">
@@ -326,6 +326,33 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h1N-8u-lQF" userLabel="ExerciseView">
                                 <rect key="frame" x="0.0" y="151" width="413" height="735"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7SP-Uu-Xh4">
+                                        <rect key="frame" x="10" y="10" width="393" height="715"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="standardCell" id="txQ-lx-1pD">
+                                                <rect key="frame" x="0.0" y="28" width="393" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="txQ-lx-1pD" id="WsY-Qp-fmu">
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="7st-BJ-B1Z" id="Joi-Hk-hGs"/>
+                                            <outlet property="delegate" destination="7st-BJ-B1Z" id="xMB-ed-yC2"/>
+                                        </connections>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="7SP-Uu-Xh4" firstAttribute="leading" secondItem="h1N-8u-lQF" secondAttribute="leading" constant="10" id="3hB-cM-mRq"/>
+                                    <constraint firstAttribute="trailing" secondItem="7SP-Uu-Xh4" secondAttribute="trailing" constant="10" id="CG3-Jd-9za"/>
+                                    <constraint firstItem="7SP-Uu-Xh4" firstAttribute="top" secondItem="h1N-8u-lQF" secondAttribute="top" constant="10" id="ps4-cA-odk"/>
+                                    <constraint firstAttribute="bottom" secondItem="7SP-Uu-Xh4" secondAttribute="bottom" constant="10" id="qfp-iR-mJZ"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -341,6 +368,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vTQ-ng-pAk"/>
                     </view>
+                    <connections>
+                        <outlet property="exerciseTable" destination="7SP-Uu-Xh4" id="eWp-bl-wJw"/>
+                        <outlet property="muscleGroupLabel" destination="nCZ-gA-R1H" id="iRX-uT-hQX"/>
+                        <outlet property="title" destination="nCZ-gA-R1H" id="y3a-Gh-rVe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gae-RH-963" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
