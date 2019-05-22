@@ -15,6 +15,8 @@
 		065081AE226A958C007F6912 /* Resolute_FitnessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065081AD226A958C007F6912 /* Resolute_FitnessTests.swift */; };
 		065081B9226A958C007F6912 /* Resolute_FitnessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065081B8226A958C007F6912 /* Resolute_FitnessUITests.swift */; };
 		06AEFFDF22792360006E6954 /* CreateWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AEFFDE22792360006E6954 /* CreateWorkout.swift */; };
+		06AEFFE1227CB19E006E6954 /* MuscleGroupExercises.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AEFFE0227CB19E006E6954 /* MuscleGroupExercises.swift */; };
+		06AEFFE3228F7772006E6954 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AEFFE2228F7772006E6954 /* Exercise.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		065081B8226A958C007F6912 /* Resolute_FitnessUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resolute_FitnessUITests.swift; sourceTree = "<group>"; };
 		065081BA226A958C007F6912 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06AEFFDE22792360006E6954 /* CreateWorkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWorkout.swift; sourceTree = "<group>"; };
+		06AEFFE0227CB19E006E6954 /* MuscleGroupExercises.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuscleGroupExercises.swift; sourceTree = "<group>"; };
+		06AEFFE2228F7772006E6954 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +106,12 @@
 				06508198226A958B007F6912 /* AppDelegate.swift */,
 				0650819A226A958B007F6912 /* StartScreen.swift */,
 				06AEFFDE22792360006E6954 /* CreateWorkout.swift */,
+				06AEFFE0227CB19E006E6954 /* MuscleGroupExercises.swift */,
 				0650819C226A958B007F6912 /* Main.storyboard */,
 				0650819F226A958C007F6912 /* Assets.xcassets */,
 				065081A1226A958C007F6912 /* LaunchScreen.storyboard */,
 				065081A4226A958C007F6912 /* Info.plist */,
+				06AEFFE2228F7772006E6954 /* Exercise.swift */,
 			);
 			path = "Resolute Fitness";
 			sourceTree = "<group>";
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06AEFFE3228F7772006E6954 /* Exercise.swift in Sources */,
 				0650819B226A958B007F6912 /* StartScreen.swift in Sources */,
 				06508199226A958B007F6912 /* AppDelegate.swift in Sources */,
+				06AEFFE1227CB19E006E6954 /* MuscleGroupExercises.swift in Sources */,
 				06AEFFDF22792360006E6954 /* CreateWorkout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
