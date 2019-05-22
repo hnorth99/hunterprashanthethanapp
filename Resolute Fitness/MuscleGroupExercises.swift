@@ -10,9 +10,11 @@ import UIKit
 
 class MuscleGroupExercises: UIViewController {
 
+    var muscleGroupName: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
