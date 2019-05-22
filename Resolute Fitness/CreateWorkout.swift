@@ -15,6 +15,13 @@ class CreateWorkout: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let muscleGroupExercises = segue.destination as? MuscleGroupExercises else {return}
+        muscleGroupExercises.pageType = "chest"
+    }
+    
+    
 
     /*
     // MARK: - Navigation

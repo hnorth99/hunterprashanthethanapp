@@ -10,7 +10,7 @@ import UIKit
 
 class MuscleGroupExercises: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var muscleGroupLabel: UILabel!
-    var pageType: String = ""
+    var pageType: String!
     let list = ["first", "second", "third", "fourth"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -26,7 +26,7 @@ class MuscleGroupExercises: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        muscleGroupLabel.text = pageType
     }
     //
     /*
