@@ -327,31 +327,30 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h1N-8u-lQF" userLabel="ExerciseView">
                                 <rect key="frame" x="0.0" y="151" width="413" height="735"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7SP-Uu-Xh4">
-                                        <rect key="frame" x="10" y="10" width="393" height="715"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oXo-GG-eGn">
+                                        <rect key="frame" x="0.0" y="0.0" width="413" height="735"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="standardCell" id="txQ-lx-1pD">
-                                                <rect key="frame" x="0.0" y="28" width="393" height="44"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="3xo-h7-Bdm">
+                                                <rect key="frame" x="0.0" y="28" width="413" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="txQ-lx-1pD" id="WsY-Qp-fmu">
-                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.5"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3xo-h7-Bdm" id="F5s-Wc-lau">
+                                                    <rect key="frame" x="0.0" y="0.0" width="413" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </tableViewCellContentView>
-                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </tableViewCell>
                                         </prototypes>
                                         <connections>
-                                            <outlet property="dataSource" destination="7st-BJ-B1Z" id="Joi-Hk-hGs"/>
-                                            <outlet property="delegate" destination="7st-BJ-B1Z" id="xMB-ed-yC2"/>
+                                            <outlet property="dataSource" destination="7st-BJ-B1Z" id="LoI-QY-TsJ"/>
+                                            <outlet property="delegate" destination="7st-BJ-B1Z" id="kdk-Yz-R5Z"/>
                                         </connections>
                                     </tableView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="7SP-Uu-Xh4" firstAttribute="leading" secondItem="h1N-8u-lQF" secondAttribute="leading" constant="10" id="3hB-cM-mRq"/>
-                                    <constraint firstAttribute="trailing" secondItem="7SP-Uu-Xh4" secondAttribute="trailing" constant="10" id="CG3-Jd-9za"/>
-                                    <constraint firstItem="7SP-Uu-Xh4" firstAttribute="top" secondItem="h1N-8u-lQF" secondAttribute="top" constant="10" id="ps4-cA-odk"/>
-                                    <constraint firstAttribute="bottom" secondItem="7SP-Uu-Xh4" secondAttribute="bottom" constant="10" id="qfp-iR-mJZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="oXo-GG-eGn" secondAttribute="bottom" id="PMd-4y-n7I"/>
+                                    <constraint firstItem="oXo-GG-eGn" firstAttribute="leading" secondItem="h1N-8u-lQF" secondAttribute="leading" id="drB-5q-gNZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="oXo-GG-eGn" secondAttribute="trailing" id="sCJ-Dc-gCs"/>
+                                    <constraint firstItem="oXo-GG-eGn" firstAttribute="top" secondItem="h1N-8u-lQF" secondAttribute="top" id="vEJ-qh-EJf"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -369,7 +368,6 @@
                         <viewLayoutGuide key="safeArea" id="vTQ-ng-pAk"/>
                     </view>
                     <connections>
-                        <outlet property="exerciseTable" destination="7SP-Uu-Xh4" id="eWp-bl-wJw"/>
                         <outlet property="muscleGroupLabel" destination="nCZ-gA-R1H" id="iRX-uT-hQX"/>
                         <outlet property="title" destination="nCZ-gA-R1H" id="y3a-Gh-rVe"/>
                     </connections>
