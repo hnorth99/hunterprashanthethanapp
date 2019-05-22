@@ -147,7 +147,7 @@
                                                     <color key="titleColor" red="0.19264850019999999" green="0.37350219489999997" blue="0.51374334099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="7st-BJ-B1Z" kind="show" identifier="chestSegue" id="YVa-JJ-TOf"/>
+                                                    <segue destination="7st-BJ-B1Z" kind="show" id="U9n-eq-1GB"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fB-ET-wMD" userLabel="BackButton">
@@ -369,7 +369,6 @@
                     </view>
                     <connections>
                         <outlet property="muscleGroupLabel" destination="nCZ-gA-R1H" id="iRX-uT-hQX"/>
-                        <outlet property="title" destination="nCZ-gA-R1H" id="y3a-Gh-rVe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gae-RH-963" userLabel="First Responder" sceneMemberID="firstResponder"/>
