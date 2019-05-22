@@ -10,11 +10,11 @@ import UIKit
 
 //CONVENTION THAT WE WILL NAME EACH EXERCISE OBJECT AS THE EXECISE IT REPRESENTS
 class Exercise: NSObject {
-    var name: String //Name of exercise
-    var information: String //Explanation of exercise
-    var oneRepWeight: Int //1 rep
-    var mediumWeight: Int //4-8 reps
-    var highWeight: Int //9+ reps
+    private var name: String //Name of exercise
+    private var information: String //Explanation of exercise
+    private var oneRepWeight: Int //1 rep
+    private var mediumWeight: Int //4-8 reps
+    private var highWeight: Int //9+ reps
     
     //Constructor for an exercise object
     //Parameters
