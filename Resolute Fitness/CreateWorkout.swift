@@ -16,6 +16,7 @@ class CreateWorkout: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    //Segue to let the MuscleGroupExercises page know what muscle group it will be showing
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let muscleGroupExercises = segue.destination as? MuscleGroupExercises else {return}
         if (segue.identifier == "chestSegue") {

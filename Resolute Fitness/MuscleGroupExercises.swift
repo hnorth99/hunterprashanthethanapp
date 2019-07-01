@@ -11,8 +11,8 @@ import UIKit
 class MuscleGroupExercises: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var muscleGroupLabel: UILabel!
     var pageType: String!
-    //let list = ["one", "two", "three"]
-    let list = Array(AppDelegate.GlobalVariables.exerciseMap["Chest"]!)
+
+    var list: [Exercise] = [];
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return list.count
@@ -27,6 +27,7 @@ class MuscleGroupExercises: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        list = Array(AppDelegate.GlobalVariables.exerciseMap[pageType]!.sorted(by: <))
         muscleGroupLabel.text = pageType + " Exercises"
     }
 }

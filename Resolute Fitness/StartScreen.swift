@@ -22,6 +22,7 @@ class StartScreen: UIViewController {
         spinMainLogoImage()
     }
 
+    //Spin the logo the first time the page opens
     func spinMainLogoImage() {
         UIView.animate(withDuration: 0.8, animations: ({
             self.mainLogoImage.transform = CGAffineTransform(rotationAngle: CGFloat.pi)

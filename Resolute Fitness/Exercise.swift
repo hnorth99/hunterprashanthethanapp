@@ -9,7 +9,7 @@
 import UIKit
 
 //CONVENTION THAT WE WILL NAME EACH EXERCISE OBJECT AS THE EXECISE IT REPRESENTS
-class Exercise: NSObject {
+class Exercise: NSObject, Comparable {
     private var name: String //Name of exercise
     private var information: String //Explanation of exercise
     private var oneRepWeight: Int //1 rep
@@ -31,6 +31,15 @@ class Exercise: NSObject {
         setsCompleted = 0
     }
     
+    static func < (lhs: Exercise, rhs: Exercise) -> Bool {
+        if (lhs.getName() < rhs.getName()) {
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    //Get name of exercise
     func getName() -> String{
         return name;
     }
