@@ -11,7 +11,8 @@ import UIKit
 class MuscleGroupExercises: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var muscleGroupLabel: UILabel!
     var pageType: String!
-    let list = ["first", "second", "third", "fourth"]
+    //let list = ["one", "two", "three"]
+    let list = Array(AppDelegate.GlobalVariables.exerciseMap["Chest"]!)
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return list.count
@@ -19,24 +20,13 @@ class MuscleGroupExercises: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = list[indexPath.row]
+        cell.textLabel?.text = list[indexPath.row].getName()
         
         return cell
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        muscleGroupLabel.text = pageType
+        muscleGroupLabel.text = pageType + " Exercises"
     }
-    //
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

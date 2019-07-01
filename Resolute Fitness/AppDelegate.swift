@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var firstRun = true //toggeled off once the user opens the app for the first time -> stays off forever
 
     //Struct sets up global variables which can be accessed in any class throughout project
-    struct GlobalVariables {
+    public struct GlobalVariables {
         static var exerciseMap: [String : Set<Exercise>] = [:] //Map from a muscle group to a corresponding set of exercises
         
     }
@@ -25,7 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             firstRun = false
             buildExerciseDatabase()
         }
-        
         return true
     }
 

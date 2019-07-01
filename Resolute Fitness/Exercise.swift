@@ -15,6 +15,7 @@ class Exercise: NSObject {
     private var oneRepWeight: Int //1 rep
     private var mediumWeight: Int //4-8 reps
     private var highWeight: Int //9+ reps
+    private var setsCompleted: Int //Number of sets the user has completed of the exercise
     
     //Constructor for an exercise object
     //Parameters
@@ -27,6 +28,11 @@ class Exercise: NSObject {
         oneRepWeight = 0
         mediumWeight = 0
         highWeight = 0
+        setsCompleted = 0
+    }
+    
+    func getName() -> String{
+        return name;
     }
     
     //Set method for one rep weight
@@ -60,5 +66,13 @@ class Exercise: NSObject {
     //Returns an int
     func getHighWeight() -> Int{
         return oneRepWeight;
+    }
+    
+    func addMoreSetsCompleted(sets: Int) {
+        setsCompleted += sets
+    }
+    
+    func getSetsCompleted() -> Int {
+        return setsCompleted
     }
 }

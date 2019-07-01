@@ -18,7 +18,19 @@ class CreateWorkout: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let muscleGroupExercises = segue.destination as? MuscleGroupExercises else {return}
-        muscleGroupExercises.pageType = "chest"
+        if (segue.identifier == "chestSegue") {
+            muscleGroupExercises.pageType = "Chest"
+        } else if (segue.identifier == "backSegue") {
+            muscleGroupExercises.pageType = "Back"
+        } else if (segue.identifier == "legsSegue") {
+            muscleGroupExercises.pageType = "Legs"
+        } else if (segue.identifier == "shouldersSegue") {
+            muscleGroupExercises.pageType = "Shoulder"
+        } else if (segue.identifier == "armsSegue") {
+            muscleGroupExercises.pageType = "Arms"
+        } else if (segue.identifier == "coreSegue") {
+            muscleGroupExercises.pageType = "Core"
+        }
     }
     
     

@@ -147,7 +147,7 @@
                                                     <color key="titleColor" red="0.19264850019999999" green="0.37350219489999997" blue="0.51374334099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="7st-BJ-B1Z" kind="show" id="U9n-eq-1GB"/>
+                                                    <segue destination="7st-BJ-B1Z" kind="show" identifier="chestSegue" id="U9n-eq-1GB"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fB-ET-wMD" userLabel="BackButton">
@@ -156,6 +156,9 @@
                                                 <state key="normal" title="Back" backgroundImage="buttonPanelBackground">
                                                     <color key="titleColor" red="0.19264850019999999" green="0.37350219489999997" blue="0.51374334099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="7st-BJ-B1Z" kind="show" identifier="backSegue" id="1wd-KA-ly1"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -179,6 +182,9 @@
                                                 <state key="normal" title="Legs" backgroundImage="buttonPanelBackground">
                                                     <color key="titleColor" red="0.19264850019999999" green="0.37350219489999997" blue="0.51374334099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="7st-BJ-B1Z" kind="show" identifier="legsSegue" id="RdS-kA-M9f"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rq7-AD-VMd" userLabel="ShouldersButton">
                                                 <rect key="frame" x="216.5" y="10" width="181.5" height="153.5"/>
@@ -186,6 +192,9 @@
                                                 <state key="normal" title="Shoulders" backgroundImage="buttonPanelBackground">
                                                     <color key="titleColor" red="0.19264850019999999" green="0.37350219489999997" blue="0.51374334099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="7st-BJ-B1Z" kind="show" identifier="shouldersSegue" id="qaQ-da-YJn"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -203,19 +212,25 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XSU-WY-cVL" userLabel="RowThreeView">
                                         <rect key="frame" x="0.0" y="382.5" width="413" height="173.5"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xL-jz-hJX" userLabel="LegsButton">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xL-jz-hJX" userLabel="ArmsButton">
                                                 <rect key="frame" x="15" y="10" width="181.5" height="153.5"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
-                                                <state key="normal" title="Legs" backgroundImage="buttonPanelBackground">
+                                                <state key="normal" title="Arms" backgroundImage="buttonPanelBackground">
                                                     <color key="titleColor" red="0.19264850019999999" green="0.37350219489999997" blue="0.51374334099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="7st-BJ-B1Z" kind="show" identifier="armsSegue" id="dHN-xk-4Ne"/>
+                                                </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9b-ev-3En" userLabel="ShouldersButton">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9b-ev-3En" userLabel="CoreButton">
                                                 <rect key="frame" x="216.5" y="10" width="181.5" height="153.5"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
-                                                <state key="normal" title="Shoulders" backgroundImage="buttonPanelBackground">
+                                                <state key="normal" title="Core" backgroundImage="buttonPanelBackground">
                                                     <color key="titleColor" red="0.19264850019999999" green="0.37350219489999997" blue="0.51374334099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="7st-BJ-B1Z" kind="show" identifier="coreSegue" id="8fH-LR-cou"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -308,7 +323,7 @@
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Muscle Group" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nCZ-gA-R1H" userLabel="muscleGroupLabel">
                                         <rect key="frame" x="46" y="0.0" width="322" height="92"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="44"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -331,11 +346,11 @@
                                         <rect key="frame" x="0.0" y="0.0" width="413" height="735"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="3xo-h7-Bdm">
-                                                <rect key="frame" x="0.0" y="28" width="413" height="44"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="68" id="3xo-h7-Bdm">
+                                                <rect key="frame" x="0.0" y="28" width="413" height="68"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3xo-h7-Bdm" id="F5s-Wc-lau">
-                                                    <rect key="frame" x="0.0" y="0.0" width="413" height="43.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="413" height="67.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </tableViewCellContentView>
                                             </tableViewCell>
@@ -373,7 +388,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gae-RH-963" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1297" y="-386"/>
+            <point key="canvasLocation" x="1295.6521739130435" y="-386.38392857142856"/>
         </scene>
     </scenes>
     <resources>
@@ -381,6 +396,7 @@
         <image name="mainLogo" width="768" height="768"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="8fH-LR-cou"/>
         <segue reference="A3S-2g-9nR"/>
     </inferredMetricsTieBreakers>
 </document>
