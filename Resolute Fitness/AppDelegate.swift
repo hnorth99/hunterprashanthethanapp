@@ -408,42 +408,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //ABDOMINAL EXERCISES
         //create an exercise object and then store it in the map
         let medicineBallSlam: Exercise = Exercise(name: "Medicine Ball Slam", information: "Decide later")
-        GlobalVariables.exerciseMap["Arms"]?.insert(medicineBallSlam)
+        GlobalVariables.exerciseMap["Core"]?.insert(medicineBallSlam)
         
         let plank: Exercise = Exercise(name: "Plank", information: "Decide later")
-        GlobalVariables.exerciseMap["Arms"]?.insert(plank)
+        GlobalVariables.exerciseMap["Core"]?.insert(plank)
         
         let declineReverseCrunch: Exercise = Exercise(name: "Decline Reverse Crunch", information: "Decide later")
-        GlobalVariables.exerciseMap["Arms"]?.insert(declineReverseCrunch)
+        GlobalVariables.exerciseMap["Core"]?.insert(declineReverseCrunch)
         
         let bicycleCrunch: Exercise = Exercise(name: "Bicycle Crunch", information: "Decide later")
-        GlobalVariables.exerciseMap["Arms"]?.insert(bicycleCrunch)
+        GlobalVariables.exerciseMap["Core"]?.insert(bicycleCrunch)
         
         let russianTwist: Exercise = Exercise(name: "Russian Twist", information: "Decide later")
-        GlobalVariables.exerciseMap["Arms"]?.insert(russianTwist)
+        GlobalVariables.exerciseMap["Core"]?.insert(russianTwist)
         
         let declineCrunch: Exercise = Exercise(name: "Decline Crunch", information: "Decide later")
-        GlobalVariables.exerciseMap["Arms"]?.insert(declineCrunch)
+        GlobalVariables.exerciseMap["Core"]?.insert(declineCrunch)
         
         let crunch: Exercise = Exercise(name: "Crunch", information: "Decide later")
-        GlobalVariables.exerciseMap["Arms"]?.insert(crunch)
+        GlobalVariables.exerciseMap["Core"]?.insert(crunch)
         
         let situp: Exercise = Exercise(name: "Situp", information: "Decide later")
-        GlobalVariables.exerciseMap["Arms"]?.insert(situp)
+        GlobalVariables.exerciseMap["Core"]?.insert(situp)
         
         let obliqueCableCrunch: Exercise = Exercise(name: "Oblique Cable Crunch", information: "Decide later")
-        GlobalVariables.exerciseMap["Arms"]?.insert(obliqueCableCrunch)
+        GlobalVariables.exerciseMap["Core"]?.insert(obliqueCableCrunch)
         
         let legRaise: Exercise = Exercise(name: "Leg Raise", information: "Decide later")
-        GlobalVariables.exerciseMap["Arms"]?.insert(legRaise)
+        GlobalVariables.exerciseMap["Core"]?.insert(legRaise)
         
         let flutterKick: Exercise = Exercise(name: "Flutter Kick", information: "Decide later")
-        GlobalVariables.exerciseMap["Arms"]?.insert(flutterKick)
+        GlobalVariables.exerciseMap["Core"]?.insert(flutterKick)
         
         let scissorKick: Exercise = Exercise(name: "Scissor Kick", information: "Decide later")
-        GlobalVariables.exerciseMap["Arms"]?.insert(scissorKick)
+        GlobalVariables.exerciseMap["Core"]?.insert(scissorKick)
         
         let barbellRoleout: Exercise = Exercise(name: "Barbell Roleout", information: "Decide later")
-        GlobalVariables.exerciseMap["Arms"]?.insert(barbellRoleout)
+        GlobalVariables.exerciseMap["Core"]?.insert(barbellRoleout)
     }
 }

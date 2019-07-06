@@ -26,7 +26,7 @@ class CreateWorkout: UIViewController {
         } else if (segue.identifier == "legsSegue") {
             muscleGroupExercises.pageType = "Legs"
         } else if (segue.identifier == "shouldersSegue") {
-            muscleGroupExercises.pageType = "Shoulder"
+            muscleGroupExercises.pageType = "Shoulders"
         } else if (segue.identifier == "armsSegue") {
             muscleGroupExercises.pageType = "Arms"
         } else if (segue.identifier == "coreSegue") {

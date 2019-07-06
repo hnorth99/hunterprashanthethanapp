@@ -47,7 +47,7 @@
                                     <color key="titleColor" red="0.1926485002040863" green="0.37350219488143921" blue="0.51374334096908569" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="2xt-Pc-O21" kind="show" id="edM-CS-4FK"/>
+                                    <segue destination="2xt-Pc-O21" kind="presentation" modalTransitionStyle="crossDissolve" id="edM-CS-4FK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ljx-g3-euP" userLabel="savedWorkoutsButton">
@@ -113,7 +113,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                         <state key="normal" title="&lt;"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="Meh-4y-Ogz"/>
+                                            <segue destination="BYZ-38-t0r" kind="presentation" modalTransitionStyle="crossDissolve" id="Meh-4y-Ogz"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Workout" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="by5-Bd-Mc5" userLabel="createWorkoutLabel">
@@ -147,7 +147,7 @@
                                                     <color key="titleColor" red="0.19264850019999999" green="0.37350219489999997" blue="0.51374334099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="7st-BJ-B1Z" kind="show" identifier="chestSegue" id="U9n-eq-1GB"/>
+                                                    <segue destination="7st-BJ-B1Z" kind="presentation" identifier="chestSegue" modalTransitionStyle="crossDissolve" id="U9n-eq-1GB"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fB-ET-wMD" userLabel="BackButton">
@@ -157,7 +157,7 @@
                                                     <color key="titleColor" red="0.19264850019999999" green="0.37350219489999997" blue="0.51374334099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="7st-BJ-B1Z" kind="show" identifier="backSegue" id="1wd-KA-ly1"/>
+                                                    <segue destination="7st-BJ-B1Z" kind="presentation" identifier="backSegue" modalTransitionStyle="crossDissolve" id="1wd-KA-ly1"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -183,7 +183,7 @@
                                                     <color key="titleColor" red="0.19264850019999999" green="0.37350219489999997" blue="0.51374334099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="7st-BJ-B1Z" kind="show" identifier="legsSegue" id="RdS-kA-M9f"/>
+                                                    <segue destination="7st-BJ-B1Z" kind="presentation" identifier="legsSegue" modalTransitionStyle="crossDissolve" id="RdS-kA-M9f"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rq7-AD-VMd" userLabel="ShouldersButton">
@@ -193,7 +193,7 @@
                                                     <color key="titleColor" red="0.19264850019999999" green="0.37350219489999997" blue="0.51374334099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="7st-BJ-B1Z" kind="show" identifier="shouldersSegue" id="qaQ-da-YJn"/>
+                                                    <segue destination="7st-BJ-B1Z" kind="presentation" identifier="shouldersSegue" modalTransitionStyle="crossDissolve" id="qaQ-da-YJn"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -219,7 +219,7 @@
                                                     <color key="titleColor" red="0.19264850019999999" green="0.37350219489999997" blue="0.51374334099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="7st-BJ-B1Z" kind="show" identifier="armsSegue" id="dHN-xk-4Ne"/>
+                                                    <segue destination="7st-BJ-B1Z" kind="presentation" identifier="armsSegue" modalTransitionStyle="crossDissolve" id="dHN-xk-4Ne"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9b-ev-3En" userLabel="CoreButton">
@@ -229,7 +229,7 @@
                                                     <color key="titleColor" red="0.19264850019999999" green="0.37350219489999997" blue="0.51374334099999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="7st-BJ-B1Z" kind="show" identifier="coreSegue" id="8fH-LR-cou"/>
+                                                    <segue destination="7st-BJ-B1Z" kind="presentation" identifier="coreSegue" modalTransitionStyle="crossDissolve" id="8fH-LR-cou"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -318,12 +318,12 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="37"/>
                                         <state key="normal" title="&lt;"/>
                                         <connections>
-                                            <segue destination="2xt-Pc-O21" kind="show" id="A3S-2g-9nR"/>
+                                            <segue destination="2xt-Pc-O21" kind="presentation" modalTransitionStyle="crossDissolve" id="A3S-2g-9nR"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Muscle Group" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nCZ-gA-R1H" userLabel="muscleGroupLabel">
                                         <rect key="frame" x="46" y="0.0" width="322" height="92"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="44"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -342,7 +342,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h1N-8u-lQF" userLabel="ExerciseView">
                                 <rect key="frame" x="0.0" y="151" width="413" height="735"/>
                                 <subviews>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oXo-GG-eGn">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oXo-GG-eGn">
                                         <rect key="frame" x="0.0" y="0.0" width="413" height="735"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
@@ -396,7 +396,7 @@
         <image name="mainLogo" width="768" height="768"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dHN-xk-4Ne"/>
+        <segue reference="1wd-KA-ly1"/>
         <segue reference="A3S-2g-9nR"/>
     </inferredMetricsTieBreakers>
 </document>

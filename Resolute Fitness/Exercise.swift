@@ -31,6 +31,8 @@ class Exercise: NSObject, Comparable {
         setsCompleted = 0
     }
     
+    //Make exercises a sortable object
+        //Will be sorted alphabetically
     static func < (lhs: Exercise, rhs: Exercise) -> Bool {
         if (lhs.getName() < rhs.getName()) {
             return true

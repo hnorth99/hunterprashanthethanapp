@@ -9,15 +9,18 @@
 import UIKit
 
 class MuscleGroupExercises: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    @IBOutlet weak var muscleGroupLabel: UILabel!
-    var pageType: String!
+    @IBOutlet weak var muscleGroupLabel: UILabel! //Title at top of page
+    var pageType: String! //Variable to keep track of what muscle group the page recommends
 
-    var list: [Exercise] = [];
+    var list: [Exercise] = []; //Sorted arraylist of all exsercises pertaining to muscle group
     
+    //Establish number of rows that will be in table
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return list.count
     }
     
+    //Assemble the table view
+        //Or one prototype cell and repeatadly create it to construct the entire table
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = list[indexPath.row].getName()
@@ -28,6 +31,6 @@ class MuscleGroupExercises: UIViewController, UITableViewDelegate, UITableViewDa
     override func viewDidLoad() {
         super.viewDidLoad()
         list = Array(AppDelegate.GlobalVariables.exerciseMap[pageType]!.sorted(by: <))
-        muscleGroupLabel.text = pageType + " Exercises"
+        muscleGroupLabel.text = pageType
     }
 }
